@@ -11,13 +11,15 @@ class App extends Component {
 
 
   //Your code here:
+  // Since App is the top level component, its componentDidMount method will be invoked before any other child components are even constructed.
+  // You can always use the constructor, which fires first, to set up your initial state, so while it is possible to set state from componentDidMount, it isn't a common pattern. Using componentDidMount is instead reserved for taking initial actions within an app. Actions might include getting remote API data, setting cursor focus, or creating an interval or timeout.
+  // The App component is keeping track of timers using an array of random ID numbers. This allows for easy removal and addition of Timer components.
+ 
+  // In App, write a componentDidMount method that invokes the existing handleAddTimer class method.
 
-
-
-
-
-
-
+  componentDidMount() {
+    this.handleAddTimer()
+  }
 
 
   // No need to modify anything in render or the class methods below

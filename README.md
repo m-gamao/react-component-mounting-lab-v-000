@@ -29,7 +29,7 @@ To pass the tests in this lab, you will need to write `componentDidMount` and
 
 #### App
 
-###### `componentDidMount`
+###### `componentDidMount` - Add to app.js file
 
 Since App is the top level component, its `componentDidMount` method will be
 invoked before any other child components are even constructed.
@@ -58,7 +58,7 @@ that's okay for now.
 
 #### Timer
 
-###### `componentDidMount`
+###### `componentDidMount` - Add to timer.js file
 
 The `componentDidMount` method is often a good place to include
 [setInterval][setinterval] or setTimeout functions, allowing you to delay
